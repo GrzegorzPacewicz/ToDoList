@@ -1,13 +1,6 @@
 {
     const tasks = [
-        {
-            content: "nagrać lekcje",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
+        
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -52,6 +45,7 @@
 
         for (const task of tasks) {
             htmlString += `
+            <ul class="list">
             <li
             class="list__item${task.done ? " list__item--done" : ""}"
             > 
@@ -62,6 +56,7 @@
             
             
             </li>
+            </ul.
         `;
         }
 
