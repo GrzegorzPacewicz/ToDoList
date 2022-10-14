@@ -1,3 +1,7 @@
 .formTaskSubmit {
     padding: 10px;
 }
+
+.formHeader {
+    text-align: left;
+}

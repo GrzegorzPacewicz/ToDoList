@@ -1,3 +1,6 @@
 .container {
     margin: 0px;
-}
+    overflow-x: auto;
+    margin: 10px;
+    flex-basis: 700px;
+    }

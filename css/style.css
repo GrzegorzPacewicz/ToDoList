@@ -11,4 +11,12 @@ html {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     word-break: break-word;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #c2bdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
