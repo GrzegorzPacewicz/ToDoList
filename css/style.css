@@ -11,11 +11,11 @@ html {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     word-break: break-word;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     padding: 20px;
     text-align: center;
-    background-color: #c2bdbd;
+    background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;

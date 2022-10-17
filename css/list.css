@@ -4,6 +4,7 @@
 
 .list__item{
 text-decoration: none;
+text-align: justify;
 }
 .list__item--done {
     text-decoration: line-through;

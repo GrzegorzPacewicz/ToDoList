@@ -2,6 +2,8 @@
     padding: 10px;
 }
 
-.formHeader {
-    text-align: left;
+.form__header {
+    text-align: center;
+    
+  
 }
