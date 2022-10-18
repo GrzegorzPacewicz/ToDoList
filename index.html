@@ -9,27 +9,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/container.css" />
   <link rel="stylesheet" href="css/list.css">
   <link rel="stylesheet" href="css/form.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/main.css">
   <script defer src="js/script.js"></script>
   <title>To Do List</title>
 </head>
 
 <body class="body">
-  <div class="container">
-    <h1 class="form__header">Lista zadań</h1>
-    <form class="js-form formTaskSubmit">
-      <input class="js-newTask formNewTask" placeholder="Dodaj zadanie">
-      <button>Dodaj zadanie</button>
-    </form>
 
-    <ul class="js-tasks"></ul>
-  </div>
+  <h1 class="form__header">Lista zadań</h1>
+
+  <main class="main">
+
+    <h2 class="main__header">Dodaj nowe zadanie</h2>
+
+    <div class="container">
+
+      <form class="js-form form__taskSubmit">
+        <input autofocus class="js-newTask form__newTask" placeholder="Co jest do zrobienia?">
+        <button class="form__button">Dodaj zadanie</button>
+      </form>
+
+    </div>
+
+    <h2 class="main__subHeader">Lista zadań</h2>
+    <div class="container">
+
+      <ul class="list js-tasks"> </ul>
+
+    </div>
+
+  </main>
+
 </body>
 
 </html>
-
