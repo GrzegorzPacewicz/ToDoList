@@ -1,24 +1,28 @@
 {
-    const tasks = [
-        
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         });
-
         render();
 
-    }
+    };
 
-    const removeTusk = (taskIndex) => {
+    const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
     };
 
-    const toggleTuskDone = (taskIndex) => {
+    const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    };
+
+    const focusOnSubmit = () => {
+        const newTask = document.querySelector(".js-newTask")
+        newTask.value = "";
+        newTask.focus();
         render();
     };
 
@@ -27,18 +31,18 @@
 
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
-                removeTusk(index);
+                removeTask(index);
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+    const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
-                toggleTuskDone(index);
+                toggleTaskDone(index);
             });
         });
-    }
+    };
 
     const render = () => {
         let htmlString = "";
@@ -50,11 +54,10 @@
             class="list__item${task.done ? " list__item--done" : ""}"
             > 
             
-            <button class = js-done>Czy zrobione?</button>
+            <button class = js-done>&#10004</button>
             ${task.content}
-            <button class = js-remove>Usuń</button>
-            
-            
+            <button class = js-remove>&#128465</button>
+                        
             </li>
             </ul.
         `;
@@ -74,6 +77,7 @@
         }
 
         addNewTask(newTaskContent);
+        focusOnSubmit();
     };
 
     const init = () => {
