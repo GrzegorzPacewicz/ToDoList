@@ -14,9 +14,12 @@ html {
     text-align: justify;
     margin: auto;
     padding: 20px;
-    text-align: center;
+ 
     background-color: aliceblue;
-    display: flex;
+   
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 70% ;
+  
 }

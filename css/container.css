@@ -5,4 +5,6 @@
     flex-basis: 700px;
     border: 1px solid #1d8294;
     background-color: white;
+    grid-column-start: 1;
+    /* grid-column-end: 5; */
     }
