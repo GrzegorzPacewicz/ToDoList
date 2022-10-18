@@ -1,4 +1,4 @@
-.container__form {
+.container {
     max-width: 100%;
     margin-top: 0px;
     padding: 20px;
@@ -7,13 +7,6 @@
     margin-bottom: 0px;
 }
 
-.container__list{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    padding: 15px;
-    border-bottom: 1px solid lightgray;
-    align-items: center;
-}
 
 
 /* margin: 0px;

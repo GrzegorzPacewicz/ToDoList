@@ -1,5 +1,14 @@
 .list {
     list-style-type: none;
+    padding-left: 0px;
+}
+
+.list__container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
 }
 
 .list__item {

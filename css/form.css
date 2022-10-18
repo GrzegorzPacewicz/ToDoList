@@ -4,11 +4,16 @@
     grid-gap: 10px;
 }
 
-
+@media (max-width: 767px) {
+    .form__taskSubmit {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .form__header {
     text-align: left;
-    margin: 10px;
+    margin: 20px;
 }
 
 .form__button {
@@ -20,6 +25,13 @@
     margin-right: 20px;
 }
 
+@media (max-width: 767px) {
+    .form__button {
+        width: 100%;
+        margin: auto;
+    }
+}
+
 .form__newTask {
     display: inline-block;
     max-width: 100%;
@@ -28,3 +40,9 @@
     border-style: solid;
 }
 
+@media (max-width: 767px) {
+    .form__newTask {
+        width: 80%;
+        margin: auto;
+    }
+}
