@@ -7,19 +7,21 @@ html {
 ::before {
     box-sizing: inherit;
 }
+
 .body {
     font-family: 'Montserrat', sans-serif;
-    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #eee;
     word-break: break-word;
-    text-align: justify;
+    max-width: 1000px;
+
+     /* text-align: justify;
     margin: auto;
     padding: 20px;
- 
-    background-color: aliceblue;
-   
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: 70% ;
-  
+    grid-template-columns: 70%; */
+
 }
