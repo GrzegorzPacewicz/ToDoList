@@ -1,8 +1,30 @@
-.formTaskSubmit {
-    padding: 10px;
+.form__taskSubmit {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
 }
+
+
 
 .form__header {
     text-align: left;
-   margin: 10px;
+    margin: 10px;
 }
+
+.form__button {
+    border: none;
+    margin-left: 10px;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.form__newTask {
+    display: inline-block;
+    max-width: 100%;
+    padding: 9px;
+    border-color: lightgray;
+    border-style: solid;
+}
+
