@@ -31,7 +31,7 @@
     height: 30px;
 }
 .list__button:active {
-    border: 3px solid black;
+    border: 3px solid white;
 }
 .list__button--done {
     background-color: red;
