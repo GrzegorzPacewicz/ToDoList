@@ -3,7 +3,7 @@
     padding-left: 0px;
 }
 
-.list__container{
+.list__container {
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 15px;
@@ -30,9 +30,19 @@
     width: 30px;
     height: 30px;
 }
+
+.list__button:hover {
+    border: 3px solid #008000;
+}
+
 .list__button:active {
     border: 3px solid white;
 }
+
 .list__button--done {
     background-color: red;
+}
+
+.list__button--done:hover {
+    background-color: #fc2323;
 }
