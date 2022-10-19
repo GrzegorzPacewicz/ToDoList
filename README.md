@@ -13,7 +13,8 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 3. If the task is done press green button on the left side of the screen.
 4. If you want to remove the task press trah icon
 
-### [Demonstration](images/demo.gif)
+![Demonstration](images/demo.gif)!
+
 ## Technologies used
 - html,
 - css
