@@ -4,10 +4,30 @@
     grid-gap: 10px;
 }
 
+@media (max-width: 767px) {
+    .form__taskSubmit {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .form__header {
     text-align: left;
     margin: 20px;
+}
+.form__newTask {
+    display: inline-block;
+    width: 100%;
+    padding: 9px;
+    border-color: lightgray;
+    border-style: solid;
+}
+
+@media (max-width: 767px) {
+    .form__newTask {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 .form__button {
@@ -19,12 +39,10 @@
     margin-right: 20px;
 }
 
-
-.form__newTask {
-    display: inline-block;
-    max-width: 100%;
-    padding: 9px;
-    border-color: lightgray;
-    border-style: solid;
+@media (max-width: 767px) {
+    .form__button {
+        width: 100%;
+        margin: auto;
+    }
 }
 
