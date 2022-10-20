@@ -1,26 +1,18 @@
 .form__taskSubmit {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
     .form__taskSubmit {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
-.form__header {
-    text-align: left;
-    margin: 20px;
-}
 .form__newTask {
-    display: inline-block;
-    width: 100%;
     padding: 10px;
-    border-color: lightgray;
-    border-style: solid;
+    border: 1px solid lightgray;;
 }
 
 @media (max-width: 767px) {
@@ -32,17 +24,15 @@
 
 .form__button {
     border: none;
-    margin-left: 10px;
     background-color: teal;
     color: white;
     padding: 10px;
-    margin-right: 20px;
 }
 
-@media (max-width: 767px) {
-    .form__button {
-        width: 100%;
-        margin: auto;
-    }
-}
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+} 
 
+.form__button:active {
+    background: hsl(180, 100%, 35%);
+} 
