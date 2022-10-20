@@ -18,7 +18,7 @@
 .form__newTask {
     display: inline-block;
     width: 100%;
-    padding: 9px;
+    padding: 10px;
     border-color: lightgray;
     border-style: solid;
 }
