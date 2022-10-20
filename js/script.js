@@ -19,13 +19,6 @@
         render();
     };
 
-    const focusOnSubmit = () => {
-        const newTask = document.querySelector(".js-newTask")
-        newTask.value = "";
-        newTask.focus();
-        render();
-    };
-
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -68,13 +61,14 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
+        const newTask = document.querySelector(".js-newTask")
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTask.value = "";
         }
 
-        addNewTask(newTaskContent);
-        focusOnSubmit();
+        newTask.focus();
     };
 
     const init = () => {
