@@ -1,7 +1,7 @@
 .list {
     list-style-type: none;
     padding: 0px;
-}
+   }
 
 .list__container {
     display: grid;
@@ -27,6 +27,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: 2s;
 }
 
 .list__button--done {
@@ -41,12 +42,12 @@
     background-color: hsl(120, 100%, 47%);
 }
 
-
 .list__button--remove {
     background-color: hsl(0, 100%, 40%);
+    transition: 2s;
 }
 
-.list__button--remove:hover{
+.list__button--remove:hover {
     background-color: hsl(0, 100%, 55%);
 }
 
