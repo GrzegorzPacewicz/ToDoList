@@ -13,7 +13,6 @@
 .form__newTask {
     padding: 10px;
     border: 1px solid lightgray;
-    ;
 }
 
 @media (max-width: 767px) {

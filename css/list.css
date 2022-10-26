@@ -40,7 +40,6 @@
       align-items: center;
     }
 }
-
     
 .list__item {
     word-break: break-word;
@@ -61,7 +60,7 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    transition: 2s;
+    transition: 1s;
 }
 
 .list__button--done {
@@ -73,7 +72,7 @@
 }
 
 .list__button--done:active {
-    background-color: hsl(120, 100%, 47%);
+    background-color: hsl(120, 100%, 46%);
 }
 
 .list__button--remove {

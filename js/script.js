@@ -30,8 +30,6 @@
         render();
     };
 
-    //nowa funkcja
-
     const markAllTasksDone = () => {
         tasks = tasks.map(task => ({
             ...task,
@@ -40,14 +38,10 @@
         render();
     };
 
-    //nowa funkcja
     const toggleHideDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
         render();
     };
-
-
-
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -67,7 +61,6 @@
         });
     };
 
-    //nowa funkcja
     const addTextButtonsEvents = () => {
         const markAllTasksDoneButton = document.querySelector(".js-markAllDone");
         const hideDoneTasksButton = document.querySelector(".js-hideDoneTasks");
@@ -86,7 +79,8 @@
 
         for (const task of tasks) {
             htmlString += `
-           <li class="list__container ${task.done && hideDoneTasks ? "list__item--hidden" : ""}">
+
+            <li class="list__container ${task.done && hideDoneTasks ? "list__item--hidden" : ""}">
                 <button class="js-done list__button list__button--done">${task.done ? "✔" : ""}</button> 
                 <span class="list__item${task.done ? " list__item--done" : ""}">${task.content}</span>    
                 <button class="js-remove list__button list__button--remove"> 🗑 </button>
@@ -98,10 +92,8 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        // bindEvents(); to usunąć
     };
 
-    // //     // nowa funkcja fu się wykrzaczam
     const renderTextButtons = () => {
         const buttonsContainer = document.querySelector(".js-listTextButtons");
 
@@ -126,15 +118,12 @@
     		`;
     };
 
-    // // //nowy render
-
     const render = () => {
         renderTasks();
         bindEvents();
         renderTextButtons();
         addTextButtonsEvents();
     };
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
