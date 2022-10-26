@@ -20,6 +20,13 @@
     transition: color 0.5s;
 }
 
+@media (max-width: 767px) {
+    .list__textButtonsButton {
+        flex-wrap: wrap;
+    }
+}
+
+
 .list__textButtonsButton:hover {
     color: hsl(180, 100%, 30%);
 }
@@ -34,13 +41,13 @@
 
 @media (max-width: 767px) {
     .list__textButtons {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
-    
+
 .list__item {
     word-break: break-word;
     align-items: center;
