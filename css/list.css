@@ -1,7 +1,7 @@
 .list {
     list-style-type: none;
     padding: 0px;
-   }
+}
 
 .list__container {
     display: grid;
@@ -12,9 +12,43 @@
     align-items: center;
 }
 
+.list__textButtonsButton {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: hsl(180, 100%, 25%);
+    transition: color 0.5s;
+}
+
+.list__textButtonsButton:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.list__textButtonsButton:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.list__textButtonsButton:disabled {
+    color: #aaa;
+}
+
+@media (max-width: 767px) {
+    .list__textButtons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+    
 .list__item {
     word-break: break-word;
     align-items: center;
+}
+
+.list__item--hidden {
+    display: none;
 }
 
 .list__item--done {

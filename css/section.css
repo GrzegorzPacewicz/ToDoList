@@ -15,3 +15,21 @@
 .section__container {
     padding: 20px;
 }
+
+.section__buttonsContainer {
+    padding: 20px;
+	border-bottom: 3px solid #eee;
+}
+
+@media (max-width: 767px) {
+	.ssection__buttonsContainer {
+		grid-template-columns: 1fr;
+	}
+}
+
+.section__buttonsContainer--grid {
+    display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-items: center;
+}
