@@ -12,12 +12,26 @@
     align-items: center;
 }
 
+.list__textButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .list__textButtons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .list__textButtonsButton {
-    font-size: 16px;
-    border: none;
+     border: none;
     background-color: transparent;
     color: hsl(180, 100%, 25%);
     transition: color 0.5s;
+    margin: 0 0 0 20px;
 }
 
 @media (max-width: 767px) {
@@ -37,15 +51,6 @@
 
 .list__textButtonsButton:disabled {
     color: #aaa;
-}
-
-@media (max-width: 767px) {
-    .list__textButtons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .list__item {
